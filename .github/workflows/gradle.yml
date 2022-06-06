@@ -1,0 +1,13 @@
+name: Gradle CI
+on: [push, pull_request]
+jobs:
+  build:
+    name: Build Gradle
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup JDK
+        uses: actions/setup-java@v3
+      - name: Build
+        uses: ./build.sh
