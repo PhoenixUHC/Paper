@@ -7,6 +7,3 @@
 [submodule "BuildData"]
 	path = BuildData
 	url = https://hub.spigotmc.org/stash/scm/spigot/builddata.git
-[submodule "Paperclip"]
-	path = Paperclip
-	url = https://github.com/PhoenixUHC/Old-Paperclip.git
