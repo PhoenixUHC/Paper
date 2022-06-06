@@ -1,0 +1,40 @@
+From 52d1cbb8dbf4296126843f6d1fdc41c237626287 Mon Sep 17 00:00:00 2001
+From: JanotLeLapin <joseph300905@gmail.com>
+Date: Mon, 6 Jun 2022 20:08:51 +0200
+Subject: [PATCH] Update dependencies
+
+
+diff --git a/build.gradle.kts b/build.gradle.kts
+index 11304e412..d82687a54 100644
+--- a/build.gradle.kts
++++ b/build.gradle.kts
+@@ -13,17 +13,17 @@ dependencies {
+     implementation("net.sf.trove4j:trove4j:3.0.3")
+     implementation(project(":paperspigot-api"))
+     implementation("org.spigotmc:minecraft-server:1.8.8-SNAPSHOT")
+-    implementation("net.sf.jopt-simple:jopt-simple:3.2")
+-    implementation("jline:jline:2.12")
+-    implementation("org.xerial:sqlite-jdbc:3.7.2")
+-    implementation("mysql:mysql-connector-java:5.1.14")
++    implementation("net.sf.jopt-simple:jopt-simple:5.0.4")
++    implementation("jline:jline:2.14.6")
++    implementation("org.xerial:sqlite-jdbc:3.36.0.3")
++    implementation("mysql:mysql-connector-java:8.0.29")
+     implementation("org.lz4:lz4-java:1.8.0")
+-    implementation("com.github.luben:zstd-jni:1.5.0-4")
+-    implementation("org.apache.logging.log4j:log4j-api:2.17.1")
+-    implementation("org.apache.logging.log4j:log4j-core:2.17.1")
++    implementation("com.github.luben:zstd-jni:1.5.2-3")
++    implementation("org.apache.logging.log4j:log4j-api:2.17.2")
++    implementation("org.apache.logging.log4j:log4j-core:2.17.2")
+     testImplementation("junit:junit:4.13.2")
+-    testImplementation("org.hamcrest:hamcrest-library:1.3")
+-    testImplementation("org.mockito:mockito-core:4.4.0")
++    testImplementation("org.hamcrest:hamcrest-library:2.2")
++    testImplementation("org.mockito:mockito-core:4.5.1")
+ }
+ 
+ application {
+-- 
+2.36.1
+
