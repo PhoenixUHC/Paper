@@ -7,18 +7,15 @@
 nbproject/
 nbactions.xml
 
-# we use maven!
-build.xml
-
-# maven
-target/
-dependency-reduced-pom.xml
+# we use gradle!
+build/
+buildSrc/
+.gradle/
 
 # vim
 .*.sw[a-p]
 
 # various other potential build files
-build/
 bin/
 dist/
 manifest.mf
@@ -43,5 +40,4 @@ PaperSpigot-Server
 PaperSpigot-API
 Bukkit
 CraftBukkit
-Paperclip
-Paperclip.jar
+paper.jar

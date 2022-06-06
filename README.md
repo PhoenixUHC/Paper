@@ -16,7 +16,7 @@ After cloning the project, run
 ./build.sh
 ```
 to generate the server JAR.  
-Once it's done, you'll have a `Paperclip.jar` file in the project directory.
+Once it's done, you'll have a `paper.jar` file in the project directory.
 
 ### Running benchmarks
 To run benchmarks, first build the server normally, then run these commands:

@@ -1,0 +1,25 @@
+From e1d776265ecf28ecbffbe54f879c9fd7ae0f4109 Mon Sep 17 00:00:00 2001
+From: JanotLeLapin <joseph300905@gmail.com>
+Date: Mon, 6 Jun 2022 20:07:33 +0200
+Subject: [PATCH] Update dependencies
+
+
+diff --git a/build.gradle.kts b/build.gradle.kts
+index 5c6cfb4c..730d145b 100644
+--- a/build.gradle.kts
++++ b/build.gradle.kts
+@@ -8,9 +8,9 @@ repositories {
+ 
+ dependencies {
+     implementation("com.googlecode.json-simple:json-simple:1.1.1")
+-    implementation("com.google.code.gson:gson:2.2.4")
++    implementation("com.google.code.gson:gson:2.9.0")
+     testImplementation("junit:junit:4.13.2")
+-    testImplementation("org.hamcrest:hamcrest-library:1.3")
++    testImplementation("org.hamcrest:hamcrest-library:2.2")
+     compileOnly("net.sf.trove4j:trove4j:3.0.3")
+ }
+ 
+-- 
+2.36.1
+
