@@ -14,4 +14,4 @@ jobs:
           distribution: 'adopt'
           cache: gradle
       - name: Build
-        uses: ./build.sh
+        run: ./build.sh
