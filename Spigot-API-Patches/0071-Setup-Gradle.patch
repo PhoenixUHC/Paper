@@ -1,4 +1,4 @@
-From a6c5bf8e9a260003cd340f3666b5340ec87e0730 Mon Sep 17 00:00:00 2001
+From c9783814def74ee4b7c77c34e864f32838ad2c18 Mon Sep 17 00:00:00 2001
 From: JanotLeLapin <joseph300905@gmail.com>
 Date: Mon, 6 Jun 2022 18:10:30 +0200
 Subject: [PATCH] Setup Gradle
@@ -31,10 +31,10 @@ index edf9e5c3..6aab1f79 100644
  /manifest.mf
 diff --git a/build.gradle.kts b/build.gradle.kts
 new file mode 100644
-index 00000000..5c6cfb4c
+index 00000000..6b2332fc
 --- /dev/null
 +++ b/build.gradle.kts
-@@ -0,0 +1,17 @@
+@@ -0,0 +1,26 @@
 +plugins {
 +    `maven-publish`
 +}
@@ -49,6 +49,15 @@ index 00000000..5c6cfb4c
 +    testImplementation("junit:junit:4.13.2")
 +    testImplementation("org.hamcrest:hamcrest-library:1.3")
 +    compileOnly("net.sf.trove4j:trove4j:3.0.3")
++}
++
++publishing.publications {
++    create<MavenPublication>("maven") {
++        groupId = "io.phoenix"
++        artifactId = "paper-api"
++        version = "1.0-SNAPSHOT"
++        from(components["java"])
++    }
 +}
 +
 +description = "PaperSpigot-API"
