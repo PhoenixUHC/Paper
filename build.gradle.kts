@@ -1,9 +1,11 @@
 plugins {
     java
+    `java-library`
 }
 
 subprojects {
     apply(plugin = "java")
+    apply(plugin = "java-library")
 
     repositories {
         mavenCentral()
@@ -13,11 +15,11 @@ subprojects {
     }
 
     dependencies {
-        implementation("commons-lang:commons-lang:2.6")
-        implementation("com.google.guava:guava:31.1-jre")
-        implementation("org.avaje:ebean:2.8.1")
-        implementation("org.yaml:snakeyaml:1.30")
-        implementation("net.md-5:bungeecord-chat:1.8-SNAPSHOT")
+        api("commons-lang:commons-lang:2.6")
+        api("com.google.guava:guava:31.1-jre")
+        api("org.avaje:ebean:2.8.1")
+        api("org.yaml:snakeyaml:1.30")
+        api("net.md-5:bungeecord-chat:1.8-SNAPSHOT")
     }
 
     tasks.withType<JavaCompile> {
