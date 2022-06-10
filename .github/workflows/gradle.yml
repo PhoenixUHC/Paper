@@ -13,5 +13,7 @@ jobs:
           java-version: '8'
           distribution: 'adopt'
           cache: gradle
+      - name: Git identity
+        run: git config --global user.name "Phoenix" && git config --global user.email "actions@github.com"
       - name: Build
         run: ./build.sh
