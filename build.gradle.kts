@@ -25,4 +25,10 @@ subprojects {
     tasks.withType<JavaCompile> {
         options.encoding = "UTF-8"
     }
+
+    java {
+        toolchain {
+            languageVersion.set(JavaLanguageVersion.of(8))
+        }
+    }
 }
